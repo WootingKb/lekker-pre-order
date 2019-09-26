@@ -1,16 +1,17 @@
 function startBuyButton(countryCode) {
   var s = document.createElement('script')
-  s.src = `https://kx9zt94vq1.execute-api.us-east-1.amazonaws.com/dev/getBuyButton?countryCode=${countryCode}`
-  document.getElementById(iframeId).appendChild(s)
 
   const link = document.getElementById('buyButtonLink')
   if (countryCode === 'US' || countryCode === 'CA') {
+    s.src = `https://cdn.jsdelivr.net/gh/WootingKb/lekker-pre-order/src/lekkerNa.min.js`
     link.innerHTML = '<u><b>Click here for EU or International</b></u>'
     link.href = '?countryCode=NL'
   } else {
+    s.src = `https://cdn.jsdelivr.net/gh/WootingKb/lekker-pre-order/src/lekkerEu.min.js`
     link.innerHTML = '<u><b>Click here for US or CA</b></u>'
     link.href = '?countryCode=US'
   }
+  document.getElementById(iframeId).appendChild(s)
 }
 
 const iframeId = 'd053a7e3-e770-4626-9048-b347b8c134e1'

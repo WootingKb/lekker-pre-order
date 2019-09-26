@@ -6,12 +6,10 @@ function startBuyButton(countryCode) {
     s.src = `https://cdn.jsdelivr.net/gh/WootingKb/lekker-pre-order/src/lekkerNa.min.js`
     link.innerHTML = '<u><b>Click here for EU or International</b></u>'
     link.href = '?countryCode=NL'
-    document.getElementById(euId).style.display = 'none'
   } else {
     s.src = `https://cdn.jsdelivr.net/gh/WootingKb/lekker-pre-order/src/lekkerEu.min.js`
     link.innerHTML = '<u><b>Click here for US or CA</b></u>'
     link.href = '?countryCode=US'
-    document.getElementById(usId).style.display = 'none'
   }
   document.getElementById(iframeId).appendChild(s)
 }
@@ -20,8 +18,7 @@ const iframeId = 'd053a7e3-e770-4626-9048-b347b8c134e1'
 const usId = 'product-component-a9f54d95b46'
 const euId = 'product-component-527947ee585'
 document.getElementById(iframeId).innerHTML += `
-<div id="${usId}"><p><b>Language layout:</b> US-ANSI</p>
-<p><b>Switch type:</b> Lekker-linear65</p></div>
+<div id="${usId}"></div>
 <div id="${euId}"></div>
 <br>
 <a id="buyButtonLink"></a>`

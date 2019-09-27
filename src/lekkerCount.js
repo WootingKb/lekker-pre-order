@@ -18,7 +18,7 @@ fetch(
           `Only ${counter}`,
           `Only ${counter - diff}`
         )
-        setTimeout(() => updateLekkerCount(counter - diff), 10)
+        setTimeout(() => updateLekkerCount(counter - diff), 50)
       }
     }
     updateLekkerCount(1000)

@@ -1,5 +1,5 @@
 fetch(
-  'https://kx9zt94vq1.execute-api.us-east-1.amazonaws.com/dev/getLekkerCount'
+  'https://6i1bamfxoi.execute-api.us-east-1.amazonaws.com/dev/getLekkerCount'
 )
   .then(response => response.text())
   .then(lekkerCount => {

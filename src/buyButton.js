@@ -145,7 +145,7 @@ if (countryCode) {
   startBuyButton(countryCode)
 } else {
   fetch(
-    'https://kx9zt94vq1.execute-api.us-east-1.amazonaws.com/dev/countryCode'
+    'https://6i1bamfxoi.execute-api.us-east-1.amazonaws.com/dev/countryCode'
   )
     .then(response => response.text())
     .then(countryCode => startBuyButton(countryCode))
